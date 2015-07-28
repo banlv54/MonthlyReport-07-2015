@@ -79,21 +79,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        android:id="@+id/stop_capture"
-        android:layout_below="@+id/button2"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:text="Record Video"
+        android:id="@+id/record_video"
+        android:layout_below="@+id/capture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
-        android:id="@+id/play_capture"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:text="Stop Video"
+        android:id="@+id/stop_video"
+        android:layout_alignBottom="@+id/record_video"
+        android:layout_toRightOf="@+id/record_video"
+        android:layout_toEndOf="@+id/record_video" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Video"
+        android:id="@+id/play_video"
+        android:layout_alignBottom="@+id/stop_video"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
